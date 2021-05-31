@@ -3,7 +3,7 @@ import fetchPhoto from './js/api';
 
 import cardMarkup from './templates/cards.hbs';
 import axios from 'axios';
-import debounce from 'lodash.debounce';
+
 import * as basicLightbox from 'basiclightbox';
 import './css/basicLightbox.min.css';
 
@@ -53,5 +53,4 @@ refs.gallery.addEventListener('click', e => {
   } else {
     basicLightbox.create(`<img src="${e.target.dataset.source}" width="800" height="600">`).show();
   }
-  console.log(e.target.dataset.source);
 });
